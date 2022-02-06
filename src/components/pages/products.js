@@ -1,7 +1,7 @@
 import React,{useState,useEffect}  from 'react';
 import { useSelector,useDispatch } from 'react-redux';
 import _ from 'lodash';
-import { GetProductsList } from '../actions/ProductsActions';
+import { GetProductsList } from '../../actions/ProductsActions';
 
 
 const Products = (props) => {

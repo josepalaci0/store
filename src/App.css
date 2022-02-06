@@ -330,3 +330,127 @@ Navigation Media Query
     padding: 0.4rem;
   }
 }
+
+/*
+======================
+Login Home
+======================
+*/
+
+.container__form{
+  position: absolute;
+  width: 80%;
+  height: 40%;
+  left: 10%;
+  top: 15%;
+  border-radius: 8px;
+  background-color: var(--grey3);
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) { 
+.form{
+  position: absolute;
+  width: 80%;
+  height: 50px;  
+  left: 10%;
+  text-align: center;  
+  margin-top: 100px;
+  
+}
+.form__email{
+  top: 10%;
+}
+.form__password{
+  top: 25%;
+  
+}
+.form__button{
+  top: 40%;
+}
+.form__email input{
+  position: absolute;
+  width: 60%;
+  height: 30px;
+  top: 10%;
+  left: 20%;
+  border-radius: 8px;
+  border: 0;
+}
+.form__password input{
+  position: absolute;
+  width: 60%;
+  height: 30px;
+  top: 10%;
+  left: 20%;
+  border-radius: 8px;
+  border: 0;
+}
+.form__button button{
+  position: absolute;
+  width: 60%;
+  height: 30px;
+  top: 10%;
+  left: 20%;
+  border-radius: 8px;
+  border: 0;
+}
+.form__button button:hover{
+  background-color: var(--orange);
+}
+
+}
+
+@media only screen and (max-width: 768px) {  
+
+.form{
+  position: absolute;
+  width: 80%;
+  height: 50px;  
+  left: 10%;
+  text-align: center;  
+  margin-top: 100px;
+  
+}
+.form__email{
+  top:6%;
+}
+.form__password{
+  top: 25%;
+  
+}
+.form__button{
+  top: 40%;
+}
+.form__email input{
+  position: absolute;
+  width: 90%;
+  height: 30px;
+  top: 30%;
+  left: 5%;
+  border-radius: 8px;
+  border: 0;
+}
+.form__password input{
+  position: absolute;
+  width: 90%;
+  height: 30px;
+  top: 10%;
+  left: 5%;
+  border-radius: 8px;
+  border: 0;
+}
+.form__button button{
+  position: absolute;
+  width: 90%;
+  height: 30px;
+  top: 10%;
+  left: 5%;
+  border-radius: 8px;
+  border: 0;
+}
+.form__button button:hover{
+  background-color: var(--orange);
+}
+
+}
