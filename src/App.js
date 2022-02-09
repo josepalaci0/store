@@ -4,8 +4,58 @@ import { Switch, Route, NavLink, Redirect } from 'react-router-dom'
 import { Shop, Login, Products,ProductDetails, Cart } from './components/pages';
 
 function App() {
+<<<<<<< Updated upstream
   const [actived, setActived] = useState("");
   console.log(actived)
+=======
+  const [active, setActive] = useState("");
+  var id = `id`;
+  return (
+    <div className="App">
+
+      <header className="header">
+        <div className="navigation">
+          <div className="container">
+            <nav className="nav">
+              <div className="nav__hamburger">
+                <i className="fas fa-bars" onClick={() => setActive("active")} ></i>
+              </div>
+
+              <div className="nav__logo">
+                <div className="scroll-link">
+                  Ecommerce Gold
+                </div>
+              </div>
+
+              <div className={`nav__menu ${active}`}>
+                <div className="menu__top">
+                  <span className="nav__category">Ecommerce Gold</span>
+                  <div className="close__toggle">
+                    <i className="fas fa-times-circle" onClick={() => setActive("")} ></i>
+                  </div>
+                </div>
+
+
+
+
+                <ul className="nav__list">
+                  <li className="nav__item">
+                    <div onClick={() => setActive("")} className="nav__link"><NavLink to={`/shop/:id`}>Home</NavLink></div>
+                  </li>
+                  <li className="nav__item">
+                    <div onClick={() => setActive("")} className="nav__link"><NavLink to={`/products/:add_to_cart`}>Products</NavLink></div>
+                  </li>
+                  <li className="nav__item">
+                    <div onClick={() => setActive("")} className="nav__link"><NavLink to={`/cart/${id}/remove-item`}>Cart</NavLink></div>
+                  </li>
+                  <li className="nav__item">
+                    <div onClick={() => setActive("")} className="nav__link"><NavLink to={`/login/`}>Login</NavLink></div>
+                  </li>
+                </ul>
+              </div>
+
+
+>>>>>>> Stashed changes
 
   return (
     <div className="App">{(<header className="header">
